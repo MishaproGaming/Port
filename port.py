@@ -3,7 +3,7 @@
 from termcolor import colored
 import socket
 
-# by MishaproGaming\!!!! 
+# by MishaproGaming\!!!!
 
 def fanc1():
     color_a = colored("[+] ", 'green')
@@ -25,13 +25,13 @@ def fanc1():
         print(color_c + "Port -- ", port, " -- [OPEN]")
 
 def fanc2():
-    color_a = colored("[+] ", 'green')
+    color_a = colored("[+] ", 'blue')
     color_b = colored("[!] ", 'red')
     color_c = colored("[!] ", 'yellow')
 
     host = input(color_a + "Host --> ")
     print("\n")
-    port = [20, 21, 22, 23, 42, 43, 53, 67, 69, 80]
+    port = [20, 21, 22, 23, 42, 43, 53, 67, 69, 80,8080,]
 
     for i in port:
         try:
@@ -43,12 +43,12 @@ def fanc2():
         else:
             print(color_c + "Port -- ", i, " -- [OPEN]")
 
-print("~"*50)
+print("."*50)
 
 print("\t[1] --- сканировать отделный порт")
 print("\t[2] --- сканировать список")
 
-print("~"*50, "\n")
+print("."*50, "\n")
 text_a = input("[scan]--> ")
 
 if text_a == "1":
@@ -58,4 +58,5 @@ elif text_a == "2":
 else:
     print(colored("Параметр введен не правильно!", 'red'))
 
-print("by MishaproGaming")
+print(colored("by MishaproGaming", 'yellow'))
+print(colored("Vk- https//:vk.com/id498388064", 'red'))
